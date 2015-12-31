@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
+	public function __construct(){
+		parent::__construct();
+		$this->load->helper("string");
+		$this->output->nocache();
+	}
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,6 +26,15 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data = [
+			"date" => date("Y-m-d"),
+			"my_handle" => "jspreddy",
+			"my_name" => "sai"
+		];
+		$this->output->setDebug($data,"key");
+
+		$this->output->setDebug(["rand"=>random_string("alpha",36)], "rand");
+		
+		$this->output->sendOutput(200, []);
 	}
 }
