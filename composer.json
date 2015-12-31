@@ -3,12 +3,19 @@
     "description": "first project",
     "type": "project",
     "require": {
-        "codeigniter/framework": "^3.0"
+        "codeigniter/framework": "^3.0",
+        "sai/ci_tut_lib":"dev-master"
     },
     "authors": [
         {
             "name": "Sai Phaninder Reddy Jonnala",
             "email": "sai.jonnala@gopassport.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"git",
+            "url":"https://github.com/jspreddy/ci_tut_lib.git"
         }
     ],
     "minimum-stability": "dev"

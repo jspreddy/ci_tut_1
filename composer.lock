@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5522822eae806dcbc17b12490612c263",
-    "content-hash": "743eaff49071c375a70afbb01c347328",
+    "hash": "b80c6f9bda910be4552bc51b9052cea8",
+    "content-hash": "93051d5a60cb9ba870d017914af54c22",
     "packages": [
         {
             "name": "codeigniter/framework",
@@ -35,12 +35,40 @@
             "description": "The CodeIgniter framework",
             "homepage": "http://codeigniter.com",
             "time": "2015-10-31 17:37:24"
+        },
+        {
+            "name": "sai/ci_tut_lib",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jspreddy/ci_tut_lib.git",
+                "reference": "6bce116df30c9bfcd0155b829fcf726d5948e1e6"
+            },
+            "require-dev": {
+                "codeigniter/framework": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CiLibs\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Sai Phaninder Reddy Jonnala",
+                    "email": "sai.jonnala@gopassport.com"
+                }
+            ],
+            "description": "this is a library for codeigniter",
+            "time": "2015-12-31 01:29:19"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "sai/ci_tut_lib": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
