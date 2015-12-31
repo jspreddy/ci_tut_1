@@ -1,0 +1,15 @@
+{
+    "name": "sai/ci_tut_1",
+    "description": "first project",
+    "type": "project",
+    "require": {
+        "codeigniter/framework": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "Sai Phaninder Reddy Jonnala",
+            "email": "sai.jonnala@gopassport.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
